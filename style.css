@@ -1,4 +1,4 @@
-/* NavBar */
+
 .navbar {
   background-color: #4F46E5;
   color: white;
@@ -22,7 +22,7 @@
   background-color: #ddd;
 }
 
-/* Grille de produits */
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -31,7 +31,7 @@
   background: #f9f9f9;
 }
 
-/* Carte produit */
+
 .product-card {
   background: white;
   border-radius: 10px;

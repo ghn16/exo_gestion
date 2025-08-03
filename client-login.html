@@ -22,14 +22,14 @@
   </div>
   <script>
   document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Empêche le rechargement
+    e.preventDefault(); 
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // Simulation basique : accepte si champs non vides
+    
     if (email && password) {
-      // Redirection vers la page produit
+      
       window.location.href = 'products.html';
     } else {
       alert("Veuillez remplir tous les champs.");
