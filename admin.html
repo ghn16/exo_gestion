@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau de bord Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="admin-page">
+
+  <header class="navbar">
+    <h1>Gestion des stocks</h1>
+    <a href="login.html" class="logout-btn">Déconnexion</a>
+  </header>
+
+  <main class="dashboard-container">
+    <button class="add-btn">+ Ajouter un produit</button>
+    <form id="formProduit" style="display: none; margin-top: 20px;">
+      <input type="text" id="nomProduit" placeholder="Nom du produit" required />
+      <input type="number" id="prixProduit" placeholder="Prix (FCFA)" required />
+      <input type="number" id="quantiteProduit" placeholder="Quantité" required />
+      <button type="submit" id="submitBtn">Ajouter</button>
+    </form>
+
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Produit</th>
+          <th>Prix</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </main>
+  <script src="admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connexion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <h2>Connexion</h2>
+
+    <form id="unifiedLoginForm" class="login-form">
+      <label for="role">Je suis :</label>
+      <select id="role" required>
+        <option value="">-- Choisir un rôle --</option>
+        <option value="client">Client</option>
+        <option value="admin">Administrateur</option>
+      </select>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="Votre email" />
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" required placeholder="Votre mot de passe" />
+
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+<script src="login.js"></script>
+</body>
+</html>
